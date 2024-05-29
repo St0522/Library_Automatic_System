@@ -1,7 +1,7 @@
 # bookList.py
 from PyQt5.QtWidgets import QWidget, QTableWidget, QTableWidgetItem, QVBoxLayout, QHBoxLayout, QHeaderView, QComboBox, QLineEdit, QPushButton
 
-class BookListWindow(QWidget):
+class addminBookListWindow(QWidget):
     def __init__(self, is_admin=False):
         super().__init__()
         self.is_admin = is_admin
@@ -40,7 +40,7 @@ class BookListWindow(QWidget):
         layout.addLayout(search_layout)  # 검색 행 레이아웃을 메인 레이아웃에 추가
         layout.addWidget(self.tableWidget)
         self.setLayout(layout)
-        self.setWindowTitle('Book List')
+        self.setWindowTitle('Book management page')
 
         self.resize(1280, 720)  # 창 크기 설정
 
