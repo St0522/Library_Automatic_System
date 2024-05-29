@@ -4,7 +4,6 @@ from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QTableWidget, QT
 from bookList import BookListWindow
 from addBook import AddBookWindow
 from addUser import AddUserWindow
-from adminBookList import addminBookListWindow
 
 class AdminWindow(QWidget):
     def __init__(self):
@@ -95,7 +94,7 @@ class AdminWindow(QWidget):
         self.user_list_window.show()
 
     def showBookListWindow(self):
-        self.book_list_window = addminBookListWindow()
+        self.book_list_window = BookListWindow()
         self.book_list_window.show()
 
     def logout(self):
